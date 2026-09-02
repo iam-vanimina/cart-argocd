@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/iam-vanimina/cart-argocd.git 
     targetRevision: main   # or a tag/commit hash
-    path: ./helm       # folder in repo with Kubernetes YAMLs
+    path: .     # folder in repo with Kubernetes YAMLs
     helm:
       releaseName: cart
       valueFiles:
