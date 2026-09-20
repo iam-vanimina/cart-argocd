@@ -33,6 +33,7 @@ spec:
         project: roboshop
         tier: app
     spec:
+      serviceAccountName: cart # istio service account name
       containers:
       - name: cart
         image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
